@@ -5,7 +5,14 @@
             padding: 10px;
             margin-bottom: 10px;
         }
-
+        .search{
+            background-color: white;
+            width:15%;
+            height:auto;
+        }
+        .search p:hover{
+            color:green;
+        }
         .video-container {
             display: inline-block;
         }

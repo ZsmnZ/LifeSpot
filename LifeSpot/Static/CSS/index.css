@@ -1,0 +1,44 @@
+﻿        /* Свойства стиля элемента. Подробнее о них в модуле по CSS */
+        .bordered {
+            border: 2px solid gainsboro;
+            background-color: darkgrey;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .video-container {
+            display: inline-block;
+        }
+        .navbar a{
+            color: black;
+        }
+        .navbar p{
+            color: darkgray;
+            padding-left: 15%;
+        }
+        .navbar p:hover{
+            color: white;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            font-size: medium;
+            color: dimgrey;
+            line-height: 66%;
+            padding-left: 70%;
+        }
+        aside {
+            height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
+            width: 10%;
+            position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+             /* Сайд-бар будет поверх остальных элементов */
+            top: 0; /* Сайдбар будет в самой верхней части страницы */
+            left: 0;
+            background-color: #111; /* Черный цвет фона (задан в виде кода) */
+            overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+            padding-top: 20px;
+        }
+        body, header, bordered{
+            background-color: lightgray;
+        }
+       

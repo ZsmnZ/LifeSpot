@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
-   <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+
+    <!-- Внешний скрипт с функциями -->
+    <script type="text/javascript" src="../Static/JS/index.js"></script>
+
+    <!-- Внутренний скрипт с вызовами функций -->
+    <script>
+        handleSession();
+    </script>
 </head>
 <body>
     <div style="margin-left:149px">
         <header class="bordered">
             <h1>LifeSpot - прямые трансляции с улиц</h1>
-            <!--Параграф-->
             <p>Покажем, что происходит прямо сейчас</p>
-            <div class="search">
-                <p>Поиск</p>
-            </div>
+            <input type="text" oninput="filterContent() /* Вызов функции */">
         </header>
         <div class="video-container">
             <iframe width="445" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

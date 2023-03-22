@@ -8,12 +8,12 @@
         .search{
             background-color: white;
             width:15%;
-            height:auto;
+            height:1em;
         }
         .search p:hover{
             color:green;
         }
-        .video-container {
+        .video-container{
             display: inline-block;
         }
         .navbar a{

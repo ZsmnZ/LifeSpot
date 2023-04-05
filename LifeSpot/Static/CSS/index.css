@@ -42,7 +42,7 @@ header, footer, body, .video-container {
 /* Стили панели навигации */
 .navbar p {
     color: darkgray;
-    padding-left: 15%;
+    padding-left: 13%;
 }
 
     /* Стили панели навигации при наведении мышью */
@@ -76,7 +76,7 @@ footer {
 aside {
     min-height: 100vh; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
     width: auto;
-    min-width: 200px;
+    min-width: 180px;
     z-index: 1;
     position: fixed; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
     top: 0; /* Сайдбар будет в самой верхней части страницы */
@@ -108,3 +108,39 @@ input {
     input:focus {
         border: 2px solid dimgrey;
     }
+    /*стили картнок для слайдера*/
+.slider{
+    width: 400px;
+    height: 220px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+}
+/*размер*/
+.slider .item img{
+    object-fit:cover;
+    width: auto;
+    height: 100%;
+}
+/*Кнопки положение*/
+.slider .previos, .slider .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /*Кнопки*/
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+.slider .next{
+    right: 0;
+}
+
+.slider .item{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
